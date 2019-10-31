@@ -1,25 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+// import { Document, Page } from 'react-pdf'
+import { Document } from 'react-pdf/dist/entry.webpack';
 
 class App extends Component {
+  state = {
+    numPages: null,
+    pageNumber: 1,
+  }
+
+
   render() {
+    const { pageNumber } = this.state;
     return (
+      
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      
+      <Document
+          file="/src/sample.pdf"
+          onLoadSuccess={this.onDocumentLoadSuccess}
+        >
+          {/* <Page pageNumber={pageNumber} /> */}
+        </Document>
+      
       </div>
     );
   }
