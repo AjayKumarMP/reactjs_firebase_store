@@ -19,8 +19,25 @@
   color: white;
 }
 
+.spinner{
+  width: 3rem !important;
+  height: 3rem !important;
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  z-index: 9999;
+}
+
+.actions{
+  cursor: pointer !important;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.seachBox{
+  margin-left: 2%;
 }
 
 @keyframes App-logo-spin {

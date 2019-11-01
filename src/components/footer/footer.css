@@ -1,4 +1,8 @@
 .footer{
-    background: grey;
-    /* margin-top: 12%; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footerText{
+    margin-left: 47%;
 }

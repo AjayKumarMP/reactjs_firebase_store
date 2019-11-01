@@ -3,11 +3,9 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from "react-router-dom";
 
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-notifications/lib/notifications.css';
-import App from './App';
 import Routes from './routes';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import * as serviceWorker from './serviceWorker';
 
